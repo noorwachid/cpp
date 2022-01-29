@@ -1,7 +1,7 @@
 # C++ / Naming Convention / Unity
 
 ### Preview
-```
+``` cpp
 namespace Network
 {
     enum struct State
