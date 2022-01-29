@@ -1,8 +1,8 @@
 # C++ / Naming Convention
 Collection of naming conventions
 
-1. [core-guidelines](C++ Core Guidelines)
-2. [llvm.md](LLVM)
-3. [qt.md](Qt)
-4. [unity.md](Unity)
-5. [unreal-engine.md](Unreal Engine)
+1. [C++ Core Guidelines](core-guidelines)
+2. [LLVM](llvm.md)
+3. [Qt](qt.md)
+4. [Unity](unity.md)
+5. [Unreal Engine](unreal-engine.md)
