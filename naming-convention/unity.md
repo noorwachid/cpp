@@ -36,7 +36,8 @@ namespace Network
     };
 }
 
-int main() {
+int main() 
+{
    const int port = 8000;
   
   Network::Socket socket;
