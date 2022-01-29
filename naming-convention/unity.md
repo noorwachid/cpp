@@ -2,31 +2,47 @@
 
 ### Preview
 ``` cpp
-namespace Network
+namespace Network 
 {
-    enum struct State
+    enum struct State 
     {
         Pending,
         OnProgress,
         Done,
     };
 
-    struct Packet
+    struct Packet 
     {
         uint8_t* data;
         uint32_t size;
     };
     
-    class Socket
+    class Socket 
     {
     public:
         void Bind(const Address& address);
+      
+        void Listen();
         
         Socket Accept(Address& address);
+      
+        int GetFD()
+        {
+            return _fd;
+        }
         
     private:
         int _fd;
-        Address _address;
     };
+}
+
+int main() {
+   const int port = 8000;
+  
+  Network::Socket socket;
+  socket.Bind(Address("::", port));
+  socket.Listen();
+  
+  return 0;
 }
 ```
